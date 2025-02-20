@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration defines the document type as HTML5 -->
+<html lang="en">
+<!-- The opening <html> tag starts the HTML document. The 'lang="en"' attribute specifies the language as English -->
+
+<head>
+    <!-- The <head> section contains meta-information about the webpage -->
+    
+    <meta charset="UTF-8">
+    <!-- The charset="UTF-8" ensures proper encoding of special characters and supports multiple languages -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag makes the webpage responsive, adjusting it to different screen sizes -->
+
+    <title>Snack Shop</title>
+    <!-- The <title> tag sets the title of the webpage, which appears on the browser tab -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- The <link> tag connects the HTML file to an external CSS file (style.css) for styling -->
+</head>
+
+<body bgcolor="lightblue">
+    <!-- The <body> section contains the content displayed on the webpage -->
+
+    <nav class="navigationbar"> <!--This block is for all the items in the top banner/block for the website. it includes things like the name, logo, searchbar, hamburger dropdown menu, and links/buttons to go to different pages of the website-->
+        <div class="navigationbar_Block">
+            <a href="/" id="navigationbar_logo">
+                <img src="logo-image.png" alt="Sample Image" width="50">SNACK SHACK
+            </a> <!--This is for the name and logo of the website.-->
+            <div class="navigationbar_MenuIcon" id="mobile-menu"> <!--This is for the hamburger icon dropdown selection-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navigationbar_Menu"> <!--This contains all the navigation buttons that take the user to the respective links-->
+                <li class="navigationbar_item">
+                    <a href="index.html" class="navigationbar_links">Home</a>
+                </li>
+                <li class="navigationbar_item">
+                    <a href="shop.html" class="navigationbar_links">Shop</a>
+                </li>
+                <li class="navigationbar_item">
+                    <a href="about.html" class="navigationbar_links">About</a>
+                </li>
+                <li class="navigationbar_item">
+                    <a href="index.html#Contact" class="navigationbar_links">Contact</a>
+                </li>
+                <li class="navigationbar_signupbutton">
+                    <a href="index.html#Contact" class="signupbutton">Sign Up</a>
+                </li>
+            </ul>
+        </div>   
+    </nav>
+    <script src="app.js"></script>
+
+   
+   
+   
+    <section id="Home">
+        <!-- The <section> tag groups related content; id="about" is used for navigation -->
+        <div class="titlebar_Block">
+            <a href="" id="titlebar_BlockTitle">
+                <img src="/" alt="" width="0">ABOUT
+            </a> <!--This is for the name and logo of the website.-->
+        </div>
+
+    
+    </section>
+
+    <section class="aboutVideo"> 
+        <h2>About Us</h2>
+        <p class="aboutParagraph">Welcome to Snack Shack! This site is your ultimate destination for exotic candies from around the globe! Founded in 2025, we’re excited about bringing unique snacks to snackers everywhere. Our selection features an array of flavors and textures, from tangy tropical sodas to rich, decadent chocolates, making sure that every sweet tooth is satisfied. At Snack Shack, we believe that snacks aren't just a treat, it's an experience. It transports you to different cultures and memories. Join us on this journey and discover the magic of our snacks! To get a taste of what we offer, check out our latest advertisement showcasing one of our most popular item. Click the video below to dive into the world of Snack Shack!</p>
+        <!--This is the about us description-->
+        <!--This is for the Youtube video-->
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/X5GxqhIWLlE?si=ypAefEItobGrNPNX" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        
+    </section>
+
+    
+    <footer>
+        <!-- The <footer> tag defines the bottom section of the webpage -->
+        <div class="footer_Block">
+            <p>&copy; 2025 SNACK SHACK INC. All rights reserved.</p>
+            <!-- The &copy; symbol represents the copyright symbol -->
+        </div>
+    </footer>
+</body>
+</html>

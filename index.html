@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration defines the document type as HTML5 -->
+<html lang="en">
+<!-- The opening <html> tag starts the HTML document. The 'lang="en"' attribute specifies the language as English -->
+
+<head>
+    <!-- The <head> section contains meta-information about the webpage -->
+    
+    <meta charset="UTF-8">
+    <!-- The charset="UTF-8" ensures proper encoding of special characters and supports multiple languages -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag makes the webpage responsive, adjusting it to different screen sizes -->
+
+    <title>Snack Shack</title>
+    <!-- The <title> tag sets the title of the webpage, which appears on the browser tab -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- The <link> tag connects the HTML file to an external CSS file (style.css) for styling -->
+</head>
+
+<body bgcolor="lightblue">
+    <!-- The <body> section contains the content displayed on the webpage -->
+
+    <nav class="navigationbar"> <!--This block is for all the items in the top banner/block for the website. it includes things like the name, logo, searchbar, hamburger dropdown menu, and links/buttons to go to different pages of the website-->
+        <div class="navigationbar_Block">
+            <a href="/" id="navigationbar_logo">
+                <img src="logo-image.png" alt="Sample Image" width="50">SNACK SHACK
+            </a> <!--This is for the name and logo of the website.-->
+            <div class="navigationbar_MenuIcon" id="mobile-menu"> <!--This is for the hamburger icon dropdown selection-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navigationbar_Menu"> <!--This contains all the navigation buttons that take the user to the respective links-->
+                <li class="navigationbar_item">
+                    <a href="index.html" class="navigationbar_links">Home</a>
+                </li>
+                <li class="navigationbar_item">
+                    <a href="shop.html" class="navigationbar_links">Shop</a>
+                </li>
+                <li class="navigationbar_item">
+                    <a href="about.html" class="navigationbar_links">About</a>
+                </li>
+                <li class="navigationbar_item">
+                    <a href="#Contact" class="navigationbar_links">Contact</a>
+                </li>
+                <li class="navigationbar_signupbutton">
+                    <a href="#Contact" class="signupbutton">Sign Up</a>
+                </li>
+            </ul>
+        </div>   
+    </nav>
+    <script src="app.js"></script>
+
+   
+   
+   
+   
+    <section id="Home">
+        <!-- The <section> tag groups related content; id="about" is used for navigation -->
+        <div class="titlebar_Block">
+            <a href="" id="titlebar_BlockTitle">
+                <img src="/" alt="" width="0">HOME
+            </a> <!--This is for the name and logo of the website.-->
+        </div>
+        <div class="MainLogo">
+            <img src="logo-image.png" alt="Sample Image" width="600">
+        </div>
+
+        <p>Our site is desgined to provide everyone with ease of access to any snack around the world!</p>
+        <!-- This <p> paragraph describes the purpose of the webpage -->
+        
+        <button id="exploreButton" class="explore-button">Explore!</button> <!--This is the button to allow the user to go the shop page of the website-->
+        
+    </section>
+    <script>
+        document.getElementById("exploreButton").addEventListener("click", function(){
+            window.location.href="shop.html";
+        });
+    </script> <!--This redirects the user to the shop page when the button is clicked-->
+   
+
+
+
+
+    <section id="Contact">
+        <!-- The <section> tag for the Contact Us section -->
+
+        <h2>Contact Us</h2>
+        <!-- The <h2> subheading for this section -->
+
+        <form>
+            <!-- The <form> tag creates an interactive form for user input -->
+
+            <label for="name">Name:</label>
+            <!-- The <label> tag is associated with the "name" input field -->
+            
+            <input type="text" id="name" name="name" required>
+            <!-- The <input> tag defines a text input field -->
+            <!-- "type=text" specifies that it is a text field -->
+            <!-- "id=name" and "name=name" help identify the field -->
+            <!-- "required" means the user must enter a name before submitting -->
+
+            <label for="email">Email:</label>
+            <!-- The <label> tag for the email input field -->
+
+            <input type="email" id="email" name="email" required>
+            <!-- The <input> field for email -->
+            <!-- "type=email" ensures the input is a valid email address -->
+            <!-- "required" makes it mandatory to enter an email -->
+
+            <input type="submit" value="Send">
+            <!-- The <input type="submit"> creates a submit button -->
+            <!-- When clicked, it submits the form data -->
+        </form>
+    </section>
+
+    <footer>
+        <!-- The <footer> tag defines the bottom section of the webpage -->
+        <div class="footer_Block">
+            <p>&copy; 2025 SNACK SHACK INC. All rights reserved.</p>
+            <!-- The &copy; symbol represents the copyright symbol -->
+        </div>
+    </footer>
+</body>
+</html>
